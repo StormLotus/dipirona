@@ -16,7 +16,6 @@ with open('tabela_salarios.csv') as csvfile:
 		values += row['red'] + ','
 		values += row['desc'] + ','
 		values += row['remLiq']
-		#print(values)
 		c.execute('insert into salarios values (' + values + ');')
 
 conn.commit()
